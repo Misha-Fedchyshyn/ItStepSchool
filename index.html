@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    sc
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap flex">
+                <div class="logo">
+                    <img src="/images/лого школи 1.png" alt="#">
+                </div>
+                <div class="title">
+                    <nav>
+                        <ul class="menu flex">
+
+                            <li class="a1"><a href="index1.html">Головна</a></li>
+                            <li class="a2"><a href="/index2.html">Про нас</a></li>
+                            <li class="a3"><a href="#">Математика</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="button2">
+                    <div id="openModalBtn"class="button"><a class="btn" href="#">приєднатися</a></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="openModal">
+               
+                    <div class="modal" style="display: none;">
+                        <h2>Форма реєстрації</h2>
+                        <span class="close">&times;</span>
+                        <input class="text1" type="text" placeholder="Введіть ім'я"><br>
+                        <input class="text2" type="text" placeholder="Введіть прізвище"><br>
+                        <button id="button223">Приєднатися</button>
+                    </div>
+                </div>
+
+                <div class="openModal2">
+                    <div class="modal2" style="display: none;">
+                        <h2>Ви успішно приєднались!</h2>
+                        <span class="close2">&times;</span>
+                    </div>
+                </div>
+
+                <div class="sec1-wrap">
+                    <div>
+                        <div class="button3"><a class="btn3" href="#">Математика & JavaScript</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="sec2-wrap ">
+                    <div class="sec2-cards">
+                        <h2>Калькулятор</h2>
+                        <input id="num1" type="number" placeholder="ведіть перше число">
+                        <input id="num2" type="number" placeholder="ведіть друге число">
+                        <select id="operation">
+                            <option value="+">додати(+)</option>
+                            <option value="-">відняти(-)</option>
+                            <option value="*">множити(*)</option>
+                            <option value="/">поділити(/)</option>
+                        </select>
+                        <button onclick="calculate()">обчислити</button>
+                        <div id="result" class="result"></div>
+                    </div>
+                    <div class="sec2-cards">
+                        <h2>Дискримінант</h2>
+                        <input id="a" type="text" placeholder="ведіть коефіціент a">
+                        <input id="b" type="text" placeholder="ведіть коефіціент b">
+                        <input id="c" type="text" placeholder="ведіть коефіціент c">
+                        <button onclick="discriminant()">обчислити Дискримінант і корені</button>
+                        <div id="result1" class="result1"></div>
+                        <div class="result2" id="result2"></div>
+                    </div>
+                    <div class="sec2-cards">
+                        <h2>теорема Вієта</h2>
+                        <input id="a1" type="text" placeholder="ведіть коефіціент a">
+                        <input id="b1" type="text" placeholder="ведіть коефіціент b">
+                        <input id="c1" type="text" placeholder="ведіть коефіціент c">
+                        <button onclick="Vieta()">обчислити за теоремою Вієта </button>
+                        <div id="result3" class="result3"></div>
+                    </div>
+                    <div class="sec2-cards">
+                        <h2>теорема піфагора</h2>
+                        <input id="a2" type="text" placeholder="ведіть катет a">
+                        <input id="b2" type="text" placeholder="ведіть катет b">
+                        <input id="c2" type="text" placeholder="ведіть гіпотенуза c">
+                        <button onclick="Pifagor()">обчислити за теоремою піфагора </button>
+                        <div class="result4" id="result4"></div>
+                    </div>
+                    <div class="sec2-cards">
+                        <h2>Вгадай число від 1 до 100</h2>
+                        <input id="a3" type="text" placeholder="ведіть число" min="1" max="100">
+                        <button onclick="Vgaday()">загадати число </button>
+                        <div class="result5" id="result5"></div>
+
+                    </div>
+                    <div class="sec2-cards">
+                        <h2>камінь ножниці папір</h2>
+                        <input id="a4" type="text" placeholder="введіть камінь,ножниці,папір">
+                        <button onclick="Play()">грати </button>
+                        <div class="result6" id="result6"></div>
+                        <div class="result7" id="result7"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap flex">
+                <div class=" fot1">
+                    <img src="/images/лого школи 1.png" alt="#">
+                </div>
+                <div class="fot2">
+                    <p class="p1">Навчання</p>
+                    <p class="p2">Загальноосвітня школа</p>
+                    <p class="p3">Початкова школа</p>
+                    <div class="images1">
+                        <img src="/images/inst 1 (1).png" alt="#">
+                        <img src="/images/youtube 1 (1).png" alt="#">
+                        <img src="/images/twitter 1 (1).png" alt="#">
+                    </div>
+
+                </div>
+                <div class="fot3">
+                    <p class="p4">Контакти</p>
+                    <p class="p5">вул. Ленкавського, 17б</p>
+                    <p class="p6">(067) 699-57-76 (050) 488-99-51 if@itstep.org
+                        ПН. - ПТ з 09.00 до 19.00 СБ. з 09.00 до 16.00</p>
+                    <p class="p7">вул. Гузара, 49 (4 поверх)</p>
+                    <img class="img4" src="/images/Group 72.png" alt="#">
+                    <img class="img5" src="/images/Group 72.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
